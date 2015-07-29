@@ -15,7 +15,7 @@ affect uptime).
 
 MSSPTable =  {
 
-    # Required fieldss
+    # Required fields
 
     "NAME":               "Evennia",
 
@@ -38,14 +38,14 @@ MSSPTable =  {
     # Categorisation
 
     "FAMILY":             "Custom", # evennia goes under 'Custom'
-    "GENRE":              "None",   # Adult, Fantasy, Historical, Horror, Modern, None, or Science Fiction
-    "GAMEPLAY":           "",       # Adventure, Educational, Hack and Slash, None,
+    "GENRE":              "Modern",   # Adult, Fantasy, Historical, Horror, Modern, None, or Science Fiction
+    "GAMEPLAY":           "Roleplaying",       # Adventure, Educational, Hack and Slash, None,
                                       # Player versus Player, Player versus Environment,
                                       # Roleplaying, Simulation, Social or Strategy
-    "STATUS":             "Open Beta",  # Alpha, Closed Beta, Open Beta, Live
-    "GAMESYSTEM":         "Custom", # D&D, d20 System, World of Darkness, etc. Use Custom if homebrew
+    "STATUS":             "Alpha",  # Alpha, Closed Beta, Open Beta, Live
+    "GAMESYSTEM":         "Fate", # D&D, d20 System, World of Darkness, etc. Use Custom if homebrew
     "INTERMUD":           "IMC2",   # evennia supports IMC2.
-    "SUBGENRE":           "None",   # LASG, Medieval Fantasy, World War II, Frankenstein,
+    "SUBGENRE":           "Fantasy",   # LASG, Medieval Fantasy, World War II, Frankenstein,
                                       # Cyberpunk, Dragonlance, etc. Or None if not available.
 
     # World
@@ -97,20 +97,20 @@ MSSPTable =  {
 
     # Game  (set to 1 or 0, or one of the given alternatives)
 
-    "ADULT MATERIAL":     "0",
+    "ADULT MATERIAL":     "1",
     "MULTICLASSING":      "0",
-    "NEWBIE FRIENDLY":    "0",
+    "NEWBIE FRIENDLY":    "1",
     "PLAYER CITIES":      "0",
     "PLAYER CLANS":       "0",
     "PLAYER CRAFTING":    "0",
     "PLAYER GUILDS":      "0",
     "EQUIPMENT SYSTEM":   "None",  # "None", "Level", "Skill", "Both"
-    "MULTIPLAYING":       "None",  # "None", "Restricted", "Full"
-    "PLAYERKILLING":      "None",  # "None", "Restricted", "Full"
+    "MULTIPLAYING":       "Full",  # "None", "Restricted", "Full"
+    "PLAYERKILLING":      "Restricted",  # "None", "Restricted", "Full"
     "QUEST SYSTEM":       "None",  # "None", "Immortal Run", "Automated", "Integrated"
-    "ROLEPLAYING":        "None",  # "None", "Accepted", "Encouraged", "Enforced"
+    "ROLEPLAYING":        "Enforced",  # "None", "Accepted", "Encouraged", "Enforced"
     "TRAINING SYSTEM":    "None",  # "None", "Level", "Skill", "Both"
-    "WORLD ORIGINALITY":  "None",  # "All Stock", "Mostly Stock", "Mostly Original", "All Original"
+    "WORLD ORIGINALITY":  "All Original",  # "All Stock", "Mostly Stock", "Mostly Original", "All Original"
 
     # Protocols (only change if you added/removed something manually)
 

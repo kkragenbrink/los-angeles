@@ -19,3 +19,7 @@ class Room(DefaultRoom):
     properties and methods available on all Objects.
     """
     pass
+
+    def at_emit(self, caller, emit):
+        return emit
+
