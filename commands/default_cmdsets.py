@@ -15,7 +15,9 @@ own cmdsets by inheriting from them or directly from `evennia.CmdSet`.
 """
 
 from evennia import default_cmds
-from comms.Emit import CmdEmit
+from character import Comms as CharacterComms, \
+    Attributes as CharacterAttributes
+
 
 class CharacterCmdSet(default_cmds.CharacterCmdSet):
     """
@@ -33,8 +35,10 @@ class CharacterCmdSet(default_cmds.CharacterCmdSet):
         #
         # any commands you add below will overload the default ones.
         #
-        self.add(CmdEmit())
+        self.add(CharacterAttributes.CmdSetFlag())
 
+        self.add(CharacterComms.CmdEmit())
+        self.add(CharacterComms.CmdPage())
 
 
 class PlayerCmdSet(default_cmds.PlayerCmdSet):

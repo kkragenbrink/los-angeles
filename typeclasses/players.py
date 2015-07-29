@@ -21,8 +21,8 @@ possibility to connect with a guest account. The setting file accepts
 several more options for customizing the Guest account system.
 
 """
-
 from evennia import DefaultPlayer, DefaultGuest
+
 
 class Player(DefaultPlayer):
     """

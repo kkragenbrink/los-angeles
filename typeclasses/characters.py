@@ -29,3 +29,14 @@ class Character(DefaultCharacter):
 
     """
     pass
+
+    def msg(self, text=None, from_obj=None, sessid=0, **kwargs):
+        if from_obj and self.db.flags["nospoof"]:
+            text = "[From: %s(%s)] %s" % (from_obj.name, from_obj.dbref, text)
+        super(self.__class__, self).msg(text=text, from_obj=from_obj, sessid=sessid, **kwargs)
+
+    def at_object_creation(self):
+        self.db.flags = {
+            "nospoof": False
+        }
+        self.db.last_paged = []
